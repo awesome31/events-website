@@ -3,19 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html,
+  body {
+    height: 100%;
+    margin: 0;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-primary: #000000; /* Pure Black */
+  --color-secondary: #f5f5f5; /* Soft White */
+  --color-accent: #a1a1a1; /* Neutral Gray */
+  --color-background: #121212; /* Off-Black */
+  --color-text: #eaeaea;
+
+  input:focus {
+    outline: none !important;
+    border: 1px solid #a855f7;
+  }
+
+  textarea:focus {
+    outline: none !important;
+    border: 1px solid #a855f7;
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4MHB4IiBoZWlnaHQ9IjEyODBweCIgdmlld0JveD0iMCAwIDEyODAgMTI4MCIgZmlsbD0ibm9uZSIgbWlkPSJzY2VuZSINPHBhdGggaWQ9IlBhdGgiIGQ9Ik0wIDBoMTI4MHYxMjgweCINZmlsbD0id2hpdGUiLz48ZyBpZD0ibm9pc2UiIG9wYWNpdHk9IjAuMTIiPjxwYXRoIGQ9Ik0wIDBoMTI4MHYxMjgweCINZmlsbD0iI0ZGRiIvPjwvZz48L3N2Zz4=");
+    opacity: 0.1;
+  }
 }

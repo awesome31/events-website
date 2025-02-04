@@ -2,16 +2,21 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--color-primary)", // Warm purple-
+        secondary: "var(--color-secondary)", // Soft Yellow
+        accent: "var(--color-accent)", // Deep Purple
+        background: "var(--color-background)", // Off-white
+        text: "var(--color-text)", // Dark for readability
       },
+    },
+    fontFamily: {
+      sans: ["var(--font-poppins)"],
     },
   },
   plugins: [],
