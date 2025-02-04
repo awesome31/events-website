@@ -5,10 +5,10 @@ export default function SelectableList({
   options,
   label,
 }: {
-  options: any;
+  options: string[];
   label: string;
 }) {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState("");
 
   return (
     <div className="relative flex flex-col w-full gap-3">
@@ -30,7 +30,7 @@ export default function SelectableList({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        {options.map((option: any, index: number) => (
+        {options.map((option: string, index: number) => (
           <motion.div
             key={option}
             className={`p-3 rounded-lg cursor-pointer border transition-all text-center ${

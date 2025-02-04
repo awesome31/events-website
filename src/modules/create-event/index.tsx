@@ -34,10 +34,12 @@ function CreateEventPage() {
             </CreateEventInfoText>
           ) : null}
           {selectedStep === 2 ? (
-            <CreateEventInfoText children="The answers you give are only visible to Kirti. 🤐" />
+            <CreateEventInfoText>
+              The answers you give are only visible to Kirti. 🤐
+            </CreateEventInfoText>
           ) : null}
           {selectedStep === 3 ? (
-            <CreateEventInfoText children="Lets Start? 🚀" />
+            <CreateEventInfoText>Lets Start? 🚀</CreateEventInfoText>
           ) : null}
           {selectedStep === 4 ? (
             <CreateEventInput label="What does Kirti call you?" />
@@ -49,7 +51,9 @@ function CreateEventPage() {
             />
           ) : null}
           {selectedStep === 6 ? (
-            <CreateEventInfoText children="That is very sweet! 💝" textCenter />
+            <CreateEventInfoText textCenter>
+              That is very sweet! 💝
+            </CreateEventInfoText>
           ) : null}
 
           {selectedStep === 7 ? (
@@ -72,22 +76,21 @@ function CreateEventPage() {
             />
           ) : null}
           {selectedStep === 9 ? (
-            <CreateEventInfoText children="Nice!" textCenter />
+            <CreateEventInfoText textCenter>Nice!</CreateEventInfoText>
           ) : null}
           {selectedStep === 10 ? (
             <MemoryUpload label="Add your favourite photo memories with Kirti 📷" />
           ) : null}
           {selectedStep === 11 ? (
-            <CreateEventInfoText
-              children="These photos are so CUTE 🤭"
-              textCenter
-            />
+            <CreateEventInfoText textCenter>
+              These photos are so CUTE 🤭
+            </CreateEventInfoText>
           ) : null}
           {selectedStep === 12 ? (
-            <CreateEventInfoText
-              children="Thanks for being an amazing friend! 🎉. Let's wish Kirti a Happy Birthday."
-              textCenter
-            />
+            <CreateEventInfoText textCenter>
+              Thanks for being an amazing friend! 🎉. Lets wish Kirti a Happy
+              Birthday.
+            </CreateEventInfoText>
           ) : null}
           {selectedStep === 13 ? (
             <CreateEventInput

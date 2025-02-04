@@ -12,7 +12,6 @@ export function CreateEventInput({
   textarea,
   placeholder = "Write something beautiful...",
 }: CreateEventInputProps) {
-  const [focused, setFocused] = useState(false);
   const [text, setText] = useState("");
 
   return (
@@ -42,8 +41,6 @@ export function CreateEventInput({
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder={placeholder}
-            onFocus={() => setFocused(true)}
-            onBlur={() => setFocused(false)}
             rows={4}
           />
         </motion.div>
